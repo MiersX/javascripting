@@ -459,14 +459,6 @@ console.log(smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 }));
 
 /*
 
-let carList = [];
-
-const carPassing = function (cars, speed)
-
-
-*/
-/*
-
 const vegetables = [
   {
     submitter: 'Old Man Franklin',
@@ -519,6 +511,37 @@ return nameOfOwner
 
 */
 
+const sumLargestNumbers = function(data) {
+  let largestNumber = 0;
+  let secondLargestNumber = 0;
+  
+  data.forEach(number => {
+    if (number > largestNumber) {
+      largestNumber = number;
+    }
+  }
+  )    
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] > secondLargestNumber && data[i] < largestNumber) {
+      secondLargestNumber = data[i];
+    }
+  } 
+    
+  return largestNumber + secondLargestNumber
+};
+
+
+console.log(sumLargestNumbers([1, 10]));
+console.log(sumLargestNumbers([1, 2, 3]));
+console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
+
+
+11
+5
+126
+
+
+
 
 
 
@@ -531,26 +554,6 @@ return nameOfOwner
 
 
 /*
-
-const judgeVegetable1 = function (vegetables, metric) {
-  
-  
-  
-  vegetables.forEach(element => {
-    for (const key in element) {
-                 if (metric === `${key}`) {
-                  console.log(`${element[key]}`)
-                }
-              }
-            }
-  )
-      }
- */
-
-/*
-
-
-
       const cars = [
         {
           time: 1568329654807,
@@ -584,11 +587,4 @@ function carPassing(cars, speed) {
 
 
 */
-
-
-
-
-
-
-
 
