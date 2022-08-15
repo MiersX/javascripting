@@ -457,7 +457,10 @@ console.log(smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 }));
   };
 */
 
+
 /*
+
+
 
 const vegetables = [
   {
@@ -477,7 +480,6 @@ const vegetables = [
   }
 ]
 const metric = "plumpness";
-
 
 
 
@@ -509,7 +511,17 @@ return nameOfOwner
  console.log(judgeVegetable(vegetables, metric));
 
 
+
+
+
 */
+
+
+
+
+
+
+/*
 
 const sumLargestNumbers = function(data) {
   let largestNumber = 0;
@@ -542,7 +554,7 @@ console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
 
 
 
-
+*/
 
 
 
@@ -587,4 +599,45 @@ function carPassing(cars, speed) {
 
 
 */
+
+
+const whereCanIPark = function (spots) {
+
+let vehicleSpotFoundX = 0;
+let vehicleSpotFoundY = 0;
+
+
+for (let i = 0; i < spots.length; i++) {
+  for (let j = 0; j < spots[i].length; j++) {
+    if (spots[j][i] === "r") {
+      vehicleSpotFoundY = j ;
+      vehicleSpotFoundX = i ;
+      break;
+  }
+ }
+}
+
+return [vehicleSpotFoundX, vehicleSpotFoundY];
+}
+
+console.log(whereCanIPark([
+  ['s', 's', 's', 'S', 'R', 'M'], // 0 ROWS ARE Y
+    ['s', 'M', 's', 'S', 'r', 'M'], // 1
+    ['s', 'M', 's', 'S', 'r', 'm'], // 2
+    ['S', 'r', 's', 'm', 'r', 'M'], // 3
+    ['S', 'r', 's', 'm', 'r', 'M'], // 4
+    ['S', 'r', 'S', 'M', 'M', 'S']
+
+]));
+
+
+
+
+
+
+
+
+
+
+
 
