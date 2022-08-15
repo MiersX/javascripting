@@ -600,7 +600,7 @@ function carPassing(cars, speed) {
 
 */
 
-
+/*
 const whereCanIPark = function (spots) {
 
 let vehicleSpotFoundX = 0;
@@ -621,14 +621,72 @@ return [vehicleSpotFoundX, vehicleSpotFoundY];
 }
 
 console.log(whereCanIPark([
-  ['s', 's', 's', 'S', 'R', 'M'], // 0 ROWS ARE Y
-    ['s', 'M', 's', 'S', 'r', 'M'], // 1
-    ['s', 'M', 's', 'S', 'r', 'm'], // 2
-    ['S', 'r', 's', 'm', 'r', 'M'], // 3
-    ['S', 'r', 's', 'm', 'r', 'M'], // 4
-    ['S', 'r', 'S', 'M', 'M', 'S']
 
 ]));
+
+
+
+*/
+
+/*
+
+
+
+
+const checkAir = function (samples, threshold) {
+  
+  let dirtySampleCount = 0;
+  let totalSampleCount = samples.length;
+
+  for (let i = 0; i < samples.length; i++) {
+    if (samples[i] === "dirty") {
+      dirtySampleCount ++;
+    }
+  }
+
+
+  
+};
+
+
+
+console.log(checkAir(
+  ['clean', 'clean', 'dirty', 'clean', 'dirty', 'clean', 'clean', 'dirty', 'clean', 'dirty'],
+  0.3
+));
+
+console.log(checkAir(
+  ['dirty', 'dirty', 'dirty', 'dirty', 'clean'],
+  0.25
+));
+
+console.log(checkAir(
+  ['clean', 'dirty', 'clean', 'dirty', 'clean', 'dirty', 'clean'],
+  0.9
+))
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+let x = 5;
+let y = 7;
+let c = x/y;
+console.log(c);
+
 
 
 
